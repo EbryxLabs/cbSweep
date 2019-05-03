@@ -86,8 +86,16 @@ def make_sweep(params):
             '&searchWindow=%s' % (ip, params.duration),
             headers={'X-AUTH-TOKEN': params.token})
 
-        if res.status_code < 400:
-            logger.info('Requested for ip [%s]: %s', ip, res)
+        if res.status_code == 429:
+            logger.info('%s, Waiting for 5 mins...', res)
+            time.sleep(5 * 61)
+            res = requests.get(
+                event_url + '?netFlow.destAddress=%s&rows=1'
+                '&searchWindow=%s' % (ip, params.duration),
+                headers={'X-AUTH-TOKEN': params.token})
+
+        elif res.status_code < 400:
+            logger.info('%s, Requested for ip [%s]', res, ip)
             data.append(process_response(res.json().get('results')))
         else:
             logger.info('Request failed for [%s]: %s', ip, res)
