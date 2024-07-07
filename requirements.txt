@@ -7,8 +7,8 @@ chardet==3.0.4
 decorator==4.4.0
 forestHog==1.2
 gitdb2==2.0.5
-GitPython==2.1.1
 idna==3.7
+GitPython==3.1.41
 ipython==7.5.0
 ipython-genutils==0.2.0
 jedi==0.13.3
@@ -21,12 +21,12 @@ ptyprocess==0.6.0
 Pygments==2.3.1
 python-dateutil==2.8.0
 PyYAML==5.4
-requests==2.21.0
+requests==2.32.2
 six==1.12.0
 smmap2==2.0.5
 solrq==1.1.1
 traitlets==4.3.2
 truffleHogRegexes==0.0.7
-urllib3==1.24.2
+urllib3==1.26.19
 validators==0.12.6
 wcwidth==0.1.7
