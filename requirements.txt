@@ -2,7 +2,7 @@ attrdict==2.0.1
 backcall==0.1.0
 cachetools==3.1.0
 cbapi==1.4.2
-certifi==2019.3.9
+certifi==2024.7.4
 chardet==3.0.4
 decorator==4.4.0
 forestHog==1.2
