@@ -8,7 +8,7 @@ decorator==4.4.0
 forestHog==1.2
 gitdb2==2.0.5
 GitPython==2.1.1
-idna==2.8
+idna==3.7
 ipython==7.5.0
 ipython-genutils==0.2.0
 jedi==0.13.3
