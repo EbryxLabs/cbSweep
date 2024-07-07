@@ -9,7 +9,7 @@ forestHog==1.2
 gitdb2==2.0.5
 idna==3.7
 GitPython==3.1.41
-ipython==7.5.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 jedi==0.13.3
 pexpect==4.7.0
